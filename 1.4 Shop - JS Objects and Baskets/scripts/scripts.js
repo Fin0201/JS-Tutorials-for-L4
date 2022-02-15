@@ -47,9 +47,9 @@ let cart = []
 
 //Add to cart function when buying products
 function AddToCart(id){
-    alert(`Added ${products[id].title} to cart`)
+    alert(`Added ${products[id].title} to cart!"`);
     cart.push(products[id])
-    console.log(cart);
+    console.log(cart)
 }
 
 //Update Cart
@@ -70,7 +70,7 @@ function UpdateCart(){
         `
     })
 
-    cartHTML +=`<div class="row"><div class="col-12"> Total: £: ${cartTotal.toFixed(2)}</div></div>`
+    cartHTML +=`<div class="row"><div class="col-12"> Total: £${cartTotal.toFixed(2)}</div></div>`;
 
     return cartHTML;
     
@@ -79,9 +79,11 @@ function UpdateCart(){
 
 
 //how do I grab all classes with 'more info'?
-//var items = document.getElementsByClassName("more-info");
 const items = document.querySelectorAll(".more-info");
+
+//add all add to cart buttons to an array
 const addToCartBtns = document.querySelectorAll(".cart-btn");
+
 console.log(items);
 console.log(addToCartBtns);
 
@@ -94,11 +96,15 @@ items.forEach(item =>{
     })
 });
 
+//add event listener to every button!
 addToCartBtns.forEach(cartBtn =>{
+    //when cart button is clicked, pass in the id of the button
     cartBtn.addEventListener("click", function(e){
         AddToCart(e.target.id)
     })
 });
+
+
 
 //attach modal for cart to JS
 var cartModal = new bootstrap.Modal(document.getElementById("cart-modal"));
