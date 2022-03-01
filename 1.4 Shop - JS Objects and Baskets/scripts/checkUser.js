@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
    
-    localStorage.removeItem("userInfo");
+    //localStorage.removeItem("userInfo");
     const userInfo = localStorage.getItem('userInfo');
 
     if (userInfo){

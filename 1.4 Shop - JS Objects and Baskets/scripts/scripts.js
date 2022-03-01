@@ -3,23 +3,23 @@
 const products = [
     {
         id:1,
-        title:"the bad shoes",
+        title:"Shoe1",
         img:"img/shoe1.jpg",
-        description:"This is shoe product -0",
+        description:"This is shoe product 1",
         price:149.99
     },
     {
         id:2,
-        title:"the good shoes",
+        title:"Shoe2",
         img:"img/shoe2.jpg",
-        description:"This is shoe product 080000 1066",
+        description:"This is shoe product 222222",
         price:79.99
     },
     {
         id:3,
-        title:"shoo",
+        title:"Shoe3",
         img:"img/shoe3.jpg",
-        description:"This is shoe product shoo",
+        description:"This is shoe product 3333333333333",
         price:59.99
     }
 ]
@@ -122,3 +122,12 @@ document.getElementById("cart-btn").addEventListener("click", function(){
 
      cartModal.show()
 })
+
+
+
+
+
+
+
+
+
